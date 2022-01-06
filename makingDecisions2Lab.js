@@ -38,13 +38,29 @@ for(i = 0; i < family.length; i++){
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
+
+// Do not edit the code above.
 var nums = [1,2,3,6,22,98,45,23,22,12];
 let evensArr = []
-// Do not edit the code above.
-
+let oddsArr = []
 /*
   Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
 */
+// function evenNumbers(nums, evensArr){
+
+for(let i = 0; i < nums.length; i++){
+  if (nums[i] %2 === 0){
+  evensArr.push(nums[i])
+  console.log(nums[i])
+
+ } else{
+   oddsArr.push(nums[i])
+ }
+}
+console.log(evensArr)
+console.log(oddsArr)
+// }
+
 
 //Code Here
 
@@ -53,12 +69,23 @@ let evensArr = []
 ////////// PROBLEM 5 //////////
 
 // Do not edit the code below.
-var score = 74
+var score = 90
 // Do not edit the code above.
 
 /*
   Determine if the letter grade of the given variable 'score'. If the variable is a 90 or above, console log an 'A', between 80 and 89, console log a 'B', between 70 and 79, 'C', between 60 and 69, 'D', and anything below 60 should console log an 'F'.
 */
+if(score >= 90){
+  console.log('A')
+} else if(score <= 89 && score >= 80){
+  console.log('B')
+} else if(score <= 79 && score >= 70){
+  console.log('C')
+} else if(score <= 69 && score >= 60){
+  console.log('D')
+} else{
+  console.log('F')
+}
 
 //Code Here
 
@@ -74,7 +101,8 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 /*
   Create a variable named 'someNum' and set it equal to the fifth value of the 'myFavoriteNumbers' array.
 */
-
+let sumNum = (myFavoriteNumbers[5])
+console.log(sumNum)
 //Code Here
 
 
